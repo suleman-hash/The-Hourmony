@@ -1,0 +1,42 @@
+<section class="hero">
+  <div class="hero-content">
+    
+    <h1 class="hero-title">
+      {{ section.settings.heading }}
+      <em>{{ section.settings.highlight }}</em>
+    </h1>
+
+    <p>{{ section.settings.subtext }}</p>
+
+    <a href="/collections/all" class="btn-primary">
+      Explore Collection
+    </a>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Wear Your"
+    },
+    {
+      "type": "text",
+      "id": "highlight",
+      "label": "Highlight Text",
+      "default": "Harmony"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Sub Text",
+      "default": "Luxury fashion meets modern design."
+    }
+  ]
+}
+{% endschema %}
